@@ -50,3 +50,8 @@ function oncloseFunc() {
 	document.querySelector(".zoom").style.display = "none";
 	document.querySelector("body").style.overflow = "";
 }
+
+document.getElementById("about").onclick = function () {
+	location.href =
+		"https://github.com/lostgirljourney/Multiverse-HTML5-Photo-Gallery-Project";
+};
