@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(122, 153, 217)),
+		color-stop(0.72, rgb(73, 125, 189)),
+		color-stop(0.86, rgb(28, 58, 148))
+	);
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+	z-index: 1;
+	margin-bottom: 49px;
+	cursor: default;
+	position: relative;
+}
+
+div.image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+
+div.inner-image-div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+div.sec {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+div.sec {
+	flex-grow: 1;
+}
+
+div.sec > img {
+	z-index: 0;
+	width: 100%;
+	cursor: zoom-in;
+}
+
+div.sec > p {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	z-index: 1;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24.2px;
+	font-weight: 500;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	color: #fff;
+	background-color: #0e0e0e;
+	z-index: 3;
+}
+
+.zoom {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	z-index: 2;
+}
+
+.zoom > div {
+	position: relative;
+	transform: scale(1.5);
+}
+
+.zoom > div > img {
+	flex-grow: 1;
+}
+
+.zoom > div > .close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.zoom > div > .arrow_back_ios {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(27.5%, -50%);
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.zoom > div > .arrow_forward_ios {
+	color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 50%;
+	transform: translate(-100%, -50%);
+}
+
+.zoom > div > p.title {
+	position: absolute;
+	bottom: 25px;
+	left: 15px;
+	line-height: 2;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.zoom > div > p.desc {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	line-height: 1;
+	color: #fff;
+	font-size: 11px;
+}
+
+footer > p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 15px;
+}
