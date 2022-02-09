@@ -1,4 +1,4 @@
-![image](https://codedamn.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcodedamn-projects%2Fmultiverse-photo-gallery-project%2Fmaster%2Fassets%2Fdesktop-design-non-fs.jpg&w=1920&q=75)
+![image](https://images.weserv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcodedamn-projects%2Fmultiverse-photo-gallery-project%2Fmaster%2Fassets%2Fdesktop-design-non-fs.jpg&w=1920&q=75)
 
 # Multiverse HTML5 Photo Gallery Project
 
